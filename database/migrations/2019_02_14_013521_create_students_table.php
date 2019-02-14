@@ -26,8 +26,6 @@ class CreateStudentsTable extends Migration
             $table->string('town');
             $table->string('barangay');
             $table->timestamps();
-            
-            $table->unsignedInteger('sex_id'); //create gender table and fk constraint
         });
     }
 

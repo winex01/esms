@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     //
+
+    public function sex()
+    {
+        return $this->belongsTo('App\Sex');
+    }
 }
