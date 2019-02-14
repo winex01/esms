@@ -18,13 +18,13 @@ class CreateStudentsTable extends Migration
             $table->string('student_identification')->nullable();
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('middle_name');
-            $table->string('suffix_name');
-            $table->date('birth_date');	
-            $table->string('birth_place');
-            $table->string('province');
-            $table->string('town');
-            $table->string('barangay');
+            $table->string('middle_name')->nullable();
+            $table->string('suffix_name')->nullable();
+            $table->date('birth_date')->nullable();	
+            $table->string('birth_place')->nullable();
+            $table->string('province')->nullable();
+            $table->string('town')->nullable();
+            $table->string('barangay')->nullable();
             $table->timestamps();
         });
     }
