@@ -15,7 +15,7 @@
  - php artisan voyager:install --with-dummy
    - email: admin@admin.com
    - password: password
-
+ - php artisan db:seed
 
 
 ## About Laravel
