@@ -15,7 +15,7 @@ class AlterStudentsTable extends Migration
     {
         //
         Schema::table('students', function (Blueprint $table) {
-            $table->unsignedInteger('sex_id');
+            $table->unsignedInteger('sex_id')->default(1);
             
             $table->foreign('sex_id')->references('id')->on('sexes');
         });

@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     //
+    protected $attributes = [
+        'sex_id' => 1,
+    ];
 
     public function sex()
     {
