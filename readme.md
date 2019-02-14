@@ -13,6 +13,8 @@
  - configure env file
  - php artisan migrate:fresh
  - php artisan voyager:install --with-dummy
+   - email: admin@admin.com
+   - password: password
 
 
 
