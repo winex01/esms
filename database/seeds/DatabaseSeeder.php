@@ -38,7 +38,5 @@ class DatabaseSeeder extends Seeder
         $this->call(CustomizedPermissionRoleTableSeeder::class);
         $this->call(CustomizedSettingsTableSeeder::class);
         $this->call(CustomizedTranslationsTableSeeder::class);
-
-        $this->call(SexesTableSeeder::class);
     }
 }
