@@ -12,5 +12,6 @@ class DatabaseInstallSeeder extends Seeder
     public function run()
     {
         $this->call(SexesTableSeeder::class);
+        $this->call(SemestersTableSeeder::class);
     }
 }
