@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Customized1TranslationsTableSeeder extends Seeder
+class CustomizedTranslationsTableSeeder extends Seeder
 {
 
     /**
@@ -14,7 +14,7 @@ class Customized1TranslationsTableSeeder extends Seeder
     {
         
 
-        // \DB::table('translations')->delete();
+        \DB::table('translations')->delete();
         
         \DB::table('translations')->insert(array (
             0 => 

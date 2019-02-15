@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Customized1SettingsTableSeeder extends Seeder
+class CustomizedSettingsTableSeeder extends Seeder
 {
 
     /**
@@ -14,7 +14,7 @@ class Customized1SettingsTableSeeder extends Seeder
     {
         
 
-        // \DB::table('settings')->delete();
+        \DB::table('settings')->delete();
         
         \DB::table('settings')->insert(array (
             0 => 

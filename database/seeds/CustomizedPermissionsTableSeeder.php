@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Customized1PermissionsTableSeeder extends Seeder
+class CustomizedPermissionsTableSeeder extends Seeder
 {
 
     /**
@@ -14,7 +14,7 @@ class Customized1PermissionsTableSeeder extends Seeder
     {
         
 
-        // \DB::table('permissions')->delete();
+        \DB::table('permissions')->delete();
         
         \DB::table('permissions')->insert(array (
             0 => 
@@ -384,6 +384,46 @@ class Customized1PermissionsTableSeeder extends Seeder
                 'table_name' => 'students',
                 'created_at' => '2019-02-14 15:57:58',
                 'updated_at' => '2019-02-14 15:57:58',
+            ),
+            46 => 
+            array (
+                'id' => 47,
+                'key' => 'browse_rooms',
+                'table_name' => 'rooms',
+                'created_at' => '2019-02-15 07:03:51',
+                'updated_at' => '2019-02-15 07:03:51',
+            ),
+            47 => 
+            array (
+                'id' => 48,
+                'key' => 'read_rooms',
+                'table_name' => 'rooms',
+                'created_at' => '2019-02-15 07:03:51',
+                'updated_at' => '2019-02-15 07:03:51',
+            ),
+            48 => 
+            array (
+                'id' => 49,
+                'key' => 'edit_rooms',
+                'table_name' => 'rooms',
+                'created_at' => '2019-02-15 07:03:51',
+                'updated_at' => '2019-02-15 07:03:51',
+            ),
+            49 => 
+            array (
+                'id' => 50,
+                'key' => 'add_rooms',
+                'table_name' => 'rooms',
+                'created_at' => '2019-02-15 07:03:51',
+                'updated_at' => '2019-02-15 07:03:51',
+            ),
+            50 => 
+            array (
+                'id' => 51,
+                'key' => 'delete_rooms',
+                'table_name' => 'rooms',
+                'created_at' => '2019-02-15 07:03:51',
+                'updated_at' => '2019-02-15 07:03:51',
             ),
         ));
         
