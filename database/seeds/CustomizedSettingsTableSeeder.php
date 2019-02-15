@@ -14,6 +14,7 @@ class CustomizedSettingsTableSeeder extends Seeder
     {
         
 
+        
         \DB::table('settings')->insert(array (
             0 => 
             array (

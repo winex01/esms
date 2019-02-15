@@ -999,7 +999,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'type' => 'text',
                 'display_name' => 'Suffix Name',
                 'required' => 0,
-                'browse' => 1,
+                'browse' => 0,
                 'read' => 1,
                 'edit' => 1,
                 'add' => 1,
@@ -1277,7 +1277,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"validation":{"rule":"required"},"display":{"width":"6"}}',
-                'order' => 3,
+                'order' => 4,
             ),
             79 => 
             array (
@@ -1293,7 +1293,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"validation":{"rule":"required"},"display":{"width":"6"}}',
-                'order' => 4,
+                'order' => 5,
             ),
             80 => 
             array (
@@ -1309,7 +1309,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":"6"}}',
-                'order' => 5,
+                'order' => 6,
             ),
             81 => 
             array (
@@ -1319,13 +1319,13 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'type' => 'text',
                 'display_name' => 'Suffix Name',
                 'required' => 0,
-                'browse' => 1,
+                'browse' => 0,
                 'read' => 1,
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":"6"}}',
-                'order' => 6,
+                'order' => 7,
             ),
             82 => 
             array (
@@ -1341,7 +1341,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":"6"}}',
-                'order' => 7,
+                'order' => 8,
             ),
             83 => 
             array (
@@ -1357,7 +1357,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":"6"}}',
-                'order' => 8,
+                'order' => 9,
             ),
             84 => 
             array (
@@ -1373,7 +1373,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":"6"}}',
-                'order' => 9,
+                'order' => 10,
             ),
             85 => 
             array (
@@ -1389,7 +1389,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":"6"}}',
-                'order' => 10,
+                'order' => 11,
             ),
             86 => 
             array (
@@ -1405,7 +1405,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"display":{"width":"6"}}',
-                'order' => 11,
+                'order' => 12,
             ),
             87 => 
             array (
@@ -1421,7 +1421,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 12,
+                'order' => 14,
             ),
             88 => 
             array (
@@ -1437,7 +1437,39 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
+                'order' => 15,
+            ),
+            89 => 
+            array (
+                'id' => 90,
+                'data_type_id' => 9,
+                'field' => 'faculty_belongsto_sex_relationship',
+                'type' => 'relationship',
+                'display_name' => 'Sex',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\Sex","table":"sexes","type":"belongsTo","column":"sex_id","key":"id","label":"description","pivot_table":"categories","pivot":"0","taggable":"0"}',
                 'order' => 13,
+            ),
+            90 => 
+            array (
+                'id' => 91,
+                'data_type_id' => 9,
+                'field' => 'sex_id',
+                'type' => 'text',
+                'display_name' => 'Sex Id',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{}',
+                'order' => 3,
             ),
         ));
         
