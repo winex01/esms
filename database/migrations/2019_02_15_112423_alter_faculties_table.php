@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AlterStudentsTable extends Migration
+class AlterFacultiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,7 @@ class AlterStudentsTable extends Migration
      */
     public function up()
     {
-        //
-        Schema::table('students', function (Blueprint $table) {
+        Schema::table('faculties', function (Blueprint $table) {
             $table->unsignedInteger('sex_id')->nullable();
             $table->foreign('sex_id')->references('id')->on('sexes');
         });
@@ -28,7 +27,5 @@ class AlterStudentsTable extends Migration
     public function down()
     {
         //
-        // $table->dropForeign(['sex_id']);
-        
     }
 }
