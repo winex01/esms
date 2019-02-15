@@ -14,7 +14,6 @@ class CustomizedMenuItemsTableSeeder extends Seeder
     {
         
 
-        
         \DB::table('menu_items')->insert(array (
             0 => 
             array (

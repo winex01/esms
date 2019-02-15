@@ -14,7 +14,6 @@ class CustomizedDataRowsTableSeeder extends Seeder
     {
         
 
-        
         \DB::table('data_rows')->insert(array (
             0 => 
             array (
@@ -1175,14 +1174,14 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'field' => 'description',
                 'type' => 'text',
                 'display_name' => 'Description',
-                'required' => 1,
+                'required' => 0,
                 'browse' => 1,
                 'read' => 1,
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
-                'order' => 2,
+                'details' => '{"display":{"width":"6"}}',
+                'order' => 3,
             ),
             73 => 
             array (
@@ -1198,7 +1197,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 3,
+                'order' => 4,
             ),
             74 => 
             array (
@@ -1214,7 +1213,23 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 4,
+                'order' => 5,
+            ),
+            75 => 
+            array (
+                'id' => 76,
+                'data_type_id' => 8,
+                'field' => 'code',
+                'type' => 'text',
+                'display_name' => 'Code',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"validation":{"rule":"unique:rooms,code"},"display":{"width":"6"}}',
+                'order' => 2,
             ),
         ));
         
