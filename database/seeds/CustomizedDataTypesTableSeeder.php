@@ -14,7 +14,6 @@ class CustomizedDataTypesTableSeeder extends Seeder
     {
         
 
-        \DB::table('data_types')->delete();
         
         \DB::table('data_types')->insert(array (
             0 => 
@@ -141,7 +140,7 @@ class CustomizedDataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":"student_no"}',
                 'created_at' => '2019-02-14 15:57:58',
-                'updated_at' => '2019-02-14 16:16:32',
+                'updated_at' => '2019-02-15 07:41:48',
             ),
             7 => 
             array (

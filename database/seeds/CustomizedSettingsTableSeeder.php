@@ -14,7 +14,6 @@ class CustomizedSettingsTableSeeder extends Seeder
     {
         
 
-        \DB::table('settings')->delete();
         
         \DB::table('settings')->insert(array (
             0 => 
