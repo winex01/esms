@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Customized1DataTypesTableSeeder extends Seeder
+class CustomizedDataTypesTableSeeder extends Seeder
 {
 
     /**
@@ -14,7 +14,7 @@ class Customized1DataTypesTableSeeder extends Seeder
     {
         
 
-        // \DB::table('data_types')->delete();
+        \DB::table('data_types')->delete();
         
         \DB::table('data_types')->insert(array (
             0 => 
@@ -142,6 +142,24 @@ class Customized1DataTypesTableSeeder extends Seeder
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":"student_no"}',
                 'created_at' => '2019-02-14 15:57:58',
                 'updated_at' => '2019-02-14 16:16:32',
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'name' => 'rooms',
+                'slug' => 'rooms',
+                'display_name_singular' => 'Room',
+                'display_name_plural' => 'Rooms',
+                'icon' => 'voyager-categories',
+                'model_name' => 'App\\Room',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2019-02-15 07:03:51',
+                'updated_at' => '2019-02-15 07:14:24',
             ),
         ));
         

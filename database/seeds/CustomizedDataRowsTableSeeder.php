@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Customized1DataRowsTableSeeder extends Seeder
+class CustomizedDataRowsTableSeeder extends Seeder
 {
 
     /**
@@ -14,7 +14,7 @@ class Customized1DataRowsTableSeeder extends Seeder
     {
         
 
-        // \DB::table('data_rows')->delete();
+        \DB::table('data_rows')->delete();
         
         \DB::table('data_rows')->insert(array (
             0 => 
@@ -1152,6 +1152,70 @@ class Customized1DataRowsTableSeeder extends Seeder
                 'delete' => 1,
                 'details' => '{"model":"App\\\\Sex","table":"sexes","type":"belongsTo","column":"sex_id","key":"id","label":"description","pivot_table":"categories","pivot":"0","taggable":"0"}',
                 'order' => 13,
+            ),
+            71 => 
+            array (
+                'id' => 72,
+                'data_type_id' => 8,
+                'field' => 'id',
+                'type' => 'hidden',
+                'display_name' => 'Id',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 1,
+            ),
+            72 => 
+            array (
+                'id' => 73,
+                'data_type_id' => 8,
+                'field' => 'description',
+                'type' => 'text',
+                'display_name' => 'Description',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{}',
+                'order' => 2,
+            ),
+            73 => 
+            array (
+                'id' => 74,
+                'data_type_id' => 8,
+                'field' => 'created_at',
+                'type' => 'timestamp',
+                'display_name' => 'Created At',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 3,
+            ),
+            74 => 
+            array (
+                'id' => 75,
+                'data_type_id' => 8,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
+                'display_name' => 'Updated At',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 1,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 4,
             ),
         ));
         

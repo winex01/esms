@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Customized1UserRolesTableSeeder extends Seeder
+class CustomizedUserRolesTableSeeder extends Seeder
 {
 
     /**
@@ -14,7 +14,7 @@ class Customized1UserRolesTableSeeder extends Seeder
     {
         
 
-        // \DB::table('user_roles')->delete();
+        \DB::table('user_roles')->delete();
         
         
         

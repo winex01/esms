@@ -29,18 +29,17 @@ class DatabaseSeeder extends Seeder
         DB::table('user_roles')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-
-        $this->call(Customized1RolesTableSeeder::class);
-        $this->call(Customized1UsersTableSeeder::class);
-        $this->call(Customized1UserRolesTableSeeder::class);
-        $this->call(Customized1DataTypesTableSeeder::class);
-        $this->call(Customized1DataRowsTableSeeder::class);
-        $this->call(Customized1MenusTableSeeder::class);
-        $this->call(Customized1MenuItemsTableSeeder::class);
-        $this->call(Customized1PermissionsTableSeeder::class);
-        $this->call(Customized1PermissionRoleTableSeeder::class);
-        $this->call(Customized1SettingsTableSeeder::class);
-        $this->call(Customized1TranslationsTableSeeder::class);
-
+        // php artisan iseed data_types,data_rows,menus,menu_items,permissions,roles,permission_role,settings,translations,users,user_roles --classnameprefix=Customized
+        $this->call(CustomizedRolesTableSeeder::class);
+        $this->call(CustomizedUsersTableSeeder::class);
+        $this->call(CustomizedUserRolesTableSeeder::class);
+        $this->call(CustomizedDataTypesTableSeeder::class);
+        $this->call(CustomizedDataRowsTableSeeder::class);
+        $this->call(CustomizedMenusTableSeeder::class);
+        $this->call(CustomizedMenuItemsTableSeeder::class);
+        $this->call(CustomizedPermissionsTableSeeder::class);
+        $this->call(CustomizedPermissionRoleTableSeeder::class);
+        $this->call(CustomizedSettingsTableSeeder::class);
+        $this->call(CustomizedTranslationsTableSeeder::class);
     }
 }

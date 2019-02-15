@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Customized1PermissionRoleTableSeeder extends Seeder
+class CustomizedPermissionRoleTableSeeder extends Seeder
 {
 
     /**
@@ -14,7 +14,7 @@ class Customized1PermissionRoleTableSeeder extends Seeder
     {
         
 
-        // \DB::table('permission_role')->delete();
+        \DB::table('permission_role')->delete();
         
         \DB::table('permission_role')->insert(array (
             0 => 
@@ -240,6 +240,31 @@ class Customized1PermissionRoleTableSeeder extends Seeder
             44 => 
             array (
                 'permission_id' => 46,
+                'role_id' => 1,
+            ),
+            45 => 
+            array (
+                'permission_id' => 47,
+                'role_id' => 1,
+            ),
+            46 => 
+            array (
+                'permission_id' => 48,
+                'role_id' => 1,
+            ),
+            47 => 
+            array (
+                'permission_id' => 49,
+                'role_id' => 1,
+            ),
+            48 => 
+            array (
+                'permission_id' => 50,
+                'role_id' => 1,
+            ),
+            49 => 
+            array (
+                'permission_id' => 51,
                 'role_id' => 1,
             ),
         ));
