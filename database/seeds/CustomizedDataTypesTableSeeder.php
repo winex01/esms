@@ -193,7 +193,25 @@ class CustomizedDataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
                 'created_at' => '2019-02-15 17:10:41',
-                'updated_at' => '2019-02-15 17:11:18',
+                'updated_at' => '2019-02-15 17:28:48',
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'name' => 'semesters',
+                'slug' => 'semesters',
+                'display_name_singular' => 'Semester',
+                'display_name_plural' => 'Semesters',
+                'icon' => 'voyager-milestone',
+                'model_name' => 'App\\Semester',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2019-02-15 17:31:34',
+                'updated_at' => '2019-02-15 17:34:55',
             ),
         ));
         
