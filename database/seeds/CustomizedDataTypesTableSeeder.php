@@ -139,7 +139,7 @@ class CustomizedDataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":"student_no"}',
                 'created_at' => '2019-02-14 15:57:58',
-                'updated_at' => '2019-02-15 07:41:48',
+                'updated_at' => '2019-02-15 11:32:36',
             ),
             7 => 
             array (
@@ -175,7 +175,7 @@ class CustomizedDataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
                 'created_at' => '2019-02-15 11:02:30',
-                'updated_at' => '2019-02-15 11:13:32',
+                'updated_at' => '2019-02-15 11:32:18',
             ),
         ));
         
