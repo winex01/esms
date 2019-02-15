@@ -14,9 +14,6 @@ class CustomizedUserRolesTableSeeder extends Seeder
     {
         
 
-        \DB::table('user_roles')->delete();
-        
-        
         
     }
 }

@@ -14,7 +14,6 @@ class CustomizedPermissionsTableSeeder extends Seeder
     {
         
 
-        
         \DB::table('permissions')->insert(array (
             0 => 
             array (
