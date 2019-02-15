@@ -12,9 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
-        $this->call(SexesTableSeeder::class);
-
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('data_types')->truncate();
         DB::table('data_rows')->truncate();
@@ -29,7 +26,7 @@ class DatabaseSeeder extends Seeder
         DB::table('user_roles')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-        // php artisan iseed data_types,data_rows,menus,menu_items,permissions,roles,permission_role,settings,translations,users,user_roles --classnameprefix=Customized
+        //php artisan iseed data_types,data_rows,menus,menu_items,permissions,roles,permission_role,settings,translations,users,user_roles --classnameprefix=Customized --force
         $this->call(CustomizedRolesTableSeeder::class);
         $this->call(CustomizedUsersTableSeeder::class);
         $this->call(CustomizedUserRolesTableSeeder::class);
@@ -41,5 +38,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CustomizedPermissionRoleTableSeeder::class);
         $this->call(CustomizedSettingsTableSeeder::class);
         $this->call(CustomizedTranslationsTableSeeder::class);
+
+        $this->call(SexesTableSeeder::class);
     }
 }

@@ -14,7 +14,6 @@ class CustomizedDataRowsTableSeeder extends Seeder
     {
         
 
-        \DB::table('data_rows')->delete();
         
         \DB::table('data_rows')->insert(array (
             0 => 
@@ -1098,12 +1097,12 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'display_name' => 'Created At',
                 'required' => 0,
                 'browse' => 0,
-                'read' => 0,
+                'read' => 1,
                 'edit' => 0,
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 11,
+                'order' => 12,
             ),
             68 => 
             array (
@@ -1114,12 +1113,12 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'display_name' => 'Updated At',
                 'required' => 0,
                 'browse' => 0,
-                'read' => 0,
+                'read' => 1,
                 'edit' => 0,
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 12,
+                'order' => 13,
             ),
             69 => 
             array (
@@ -1128,7 +1127,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'field' => 'sex_id',
                 'type' => 'text',
                 'display_name' => 'Sex Id',
-                'required' => 1,
+                'required' => 0,
                 'browse' => 0,
                 'read' => 1,
                 'edit' => 1,
@@ -1151,7 +1150,7 @@ class CustomizedDataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"model":"App\\\\Sex","table":"sexes","type":"belongsTo","column":"sex_id","key":"id","label":"description","pivot_table":"categories","pivot":"0","taggable":"0"}',
-                'order' => 13,
+                'order' => 11,
             ),
             71 => 
             array (

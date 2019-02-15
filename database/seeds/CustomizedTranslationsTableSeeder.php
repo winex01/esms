@@ -14,7 +14,6 @@ class CustomizedTranslationsTableSeeder extends Seeder
     {
         
 
-        \DB::table('translations')->delete();
         
         \DB::table('translations')->insert(array (
             0 => 
