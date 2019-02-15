@@ -12,6 +12,7 @@ class CustomizedMenusTableSeeder extends Seeder
      */
     public function run()
     {
+        
 
         \DB::table('menus')->insert(array (
             0 => 
