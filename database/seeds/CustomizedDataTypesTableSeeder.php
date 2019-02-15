@@ -177,6 +177,24 @@ class CustomizedDataTypesTableSeeder extends Seeder
                 'created_at' => '2019-02-15 11:02:30',
                 'updated_at' => '2019-02-15 11:32:18',
             ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 'subjects',
+                'slug' => 'subjects',
+                'display_name_singular' => 'Subject',
+                'display_name_plural' => 'Subjects',
+                'icon' => 'voyager-book',
+                'model_name' => 'App\\Subject',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2019-02-15 17:10:41',
+                'updated_at' => '2019-02-15 17:11:18',
+            ),
         ));
         
         
