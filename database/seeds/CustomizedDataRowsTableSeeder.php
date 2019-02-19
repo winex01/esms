@@ -14,6 +14,8 @@ class CustomizedDataRowsTableSeeder extends Seeder
     {
         
 
+        // \DB::table('data_rows')->delete();
+        
         \DB::table('data_rows')->insert(array (
             0 => 
             array (

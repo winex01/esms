@@ -14,6 +14,8 @@ class CustomizedRolesTableSeeder extends Seeder
     {
         
 
+        // \DB::table('roles')->delete();
+        
         \DB::table('roles')->insert(array (
             0 => 
             array (
