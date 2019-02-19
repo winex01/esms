@@ -583,6 +583,46 @@ class CustomizedPermissionsTableSeeder extends Seeder
                 'created_at' => '2019-02-16 07:51:10',
                 'updated_at' => '2019-02-16 07:51:10',
             ),
+            71 => 
+            array (
+                'id' => 77,
+                'key' => 'browse_courses',
+                'table_name' => 'courses',
+                'created_at' => '2019-02-19 06:06:00',
+                'updated_at' => '2019-02-19 06:06:00',
+            ),
+            72 => 
+            array (
+                'id' => 78,
+                'key' => 'read_courses',
+                'table_name' => 'courses',
+                'created_at' => '2019-02-19 06:06:00',
+                'updated_at' => '2019-02-19 06:06:00',
+            ),
+            73 => 
+            array (
+                'id' => 79,
+                'key' => 'edit_courses',
+                'table_name' => 'courses',
+                'created_at' => '2019-02-19 06:06:00',
+                'updated_at' => '2019-02-19 06:06:00',
+            ),
+            74 => 
+            array (
+                'id' => 80,
+                'key' => 'add_courses',
+                'table_name' => 'courses',
+                'created_at' => '2019-02-19 06:06:00',
+                'updated_at' => '2019-02-19 06:06:00',
+            ),
+            75 => 
+            array (
+                'id' => 81,
+                'key' => 'delete_courses',
+                'table_name' => 'courses',
+                'created_at' => '2019-02-19 06:06:00',
+                'updated_at' => '2019-02-19 06:06:00',
+            ),
         ));
         
         
