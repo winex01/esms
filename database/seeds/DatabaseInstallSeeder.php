@@ -13,5 +13,6 @@ class DatabaseInstallSeeder extends Seeder
     {
         $this->call(SexesTableSeeder::class);
         $this->call(SemestersTableSeeder::class);
+        $this->call(SectionsTableSeeder::class);
     }
 }
