@@ -14,6 +14,8 @@ class CustomizedUsersTableSeeder extends Seeder
     {
         
 
+        // \DB::table('users')->delete();
+        
         \DB::table('users')->insert(array (
             0 => 
             array (
